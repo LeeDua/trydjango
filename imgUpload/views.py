@@ -40,7 +40,7 @@ def upload_single(request):
     response = JsonResponse(
         {
             'success': 'true',
-            'url': urls
+            'urls': urls
         }
     )
     response["Access-Control-Allow-Origin"] = "*"
