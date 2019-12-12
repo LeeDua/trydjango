@@ -30,10 +30,10 @@ def upload_single(request):
     upload_name = new_img.img.name.split('/')[-1]
     print(upload_name)
 
-    os.system("cp -f " + os.path.join(MEDIA_ROOT, 'img', upload_name) + ' ' + os.path.join(COCO_ROOT, 'input.jpg'))
+    os.system("cp -f " + os.path.join(MEDIA_ROOT, 'img', upload_name) + ' ' + os.path.join(COCO_ROOT, upload_name))
     image_detection()
 
-    url = os.path.join(MEDIA_ROOT, 'outs', upload_name)
+    url = os.path.join('47.99.180.225:8080','MEDIA', 'outs', upload_name)
     print('url  ', url)
 
     response = JsonResponse(
