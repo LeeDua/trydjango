@@ -52,8 +52,6 @@ def upload_single(request):
 
 
 def image_detection():
-    # images = IMG.objects.all()
     print("image detecting...")
-    # os.system("cp -f " + os.path.join(COCO_ROOT, 'input.jpg') + ' ' + DETECT_ROOT)
-    # os.system("python /home/file/mmdetection/tools/server_test.py")
+    os.system("python /home/file/mmdetection/tools/server_test.py")
     print("detection finished!")
